@@ -18,13 +18,13 @@ RUN echo deb http://archive.ubuntu.com/ubuntu precise universe multiverse >> /et
 
 # install nodejs and npm
 
-RUN apt-get install -y nodejs npm git git-core
+# RUN apt-get install -y nodejs npm
 
 
 # Run ffmpeg build script that uses openssl
 
-ADD script/build.sh /build.sh
-RUN ["/bin/bash", "/build.sh"]
+#ADD script/build.sh /build.sh
+#RUN ["/bin/bash", "/build.sh"]
 
 
 CMD ["/bin/bash"]
